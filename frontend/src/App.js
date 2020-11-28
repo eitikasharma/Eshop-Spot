@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import data from './data';
+import React from 'react';
 import './App.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
-import HomeScreen from './Screens/HomeScreen';
-import ProductScreen from './Screens/ProductScreen';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+
 function App() {
 
 const openMenu=()=>{
@@ -21,7 +21,9 @@ const closeMenu=()=>{
      <button onClick={openMenu}>
        &#9776;
      </button>
+
      <Link to="/">Eshop Spot</Link>
+
     </div>
    <div className="header-links">
     <a href="cart.html">Cart</a>&nbsp;&nbsp;&nbsp;
@@ -44,6 +46,7 @@ const closeMenu=()=>{
 
   <main className="main">
     <div className="content">
+
     <Route path="/products/:id" component={ProductScreen}/>
     <Route path="/" exact={true} component={HomeScreen}/>
 
@@ -55,6 +58,7 @@ const closeMenu=()=>{
   </footer>
 </div>
 </BrowserRouter>
+
   );
 }
 

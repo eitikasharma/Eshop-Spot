@@ -2,8 +2,7 @@ import React from 'react';
 
 function ProductScreen(props)
 {
-    return (
-        <div>abcd</div>
-    );
+    console.log(props.match.params.id)
+    return <div>ProductScreen</div>
 }
 export default ProductScreen;
