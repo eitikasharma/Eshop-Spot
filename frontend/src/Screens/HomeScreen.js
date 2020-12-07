@@ -32,7 +32,7 @@ error ? <div>{error}</div> :
                 </div>
                 <div className="product-brand">{product.brand}</div>
                 <div className="product-price">Rs {product.price}</div>
-                <div className="product-rating">{product.rating} Stars ({product.numReiews} Reviews)</div>
+                <div className="product-rating">{product.rating} Stars ({product.numReviews} Reviews)</div>
               </div>
             </li>)
         }

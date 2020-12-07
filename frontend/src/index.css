@@ -161,11 +161,11 @@ top: 1.5rem;
 }
 .details-image
 {
-  flex:2 1 60rem;
+  flex:2 1 40rem;
 }
 .details-image img
 {
-  max-width: 60rem;
+  max-width: 40rem;
   widows: 100%;
 }
 .details-info
