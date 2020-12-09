@@ -8,6 +8,9 @@ import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import { useSelector } from 'react-redux';
 import RegisterScreen from './screens/RegisterScreen';
+import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
 
 function App() {
 
@@ -64,7 +67,9 @@ const closeMenu=()=>{
     <Route path="/product/:id" component={ProductScreen}/>
     <Route path="/cart/:id?" component={CartScreen}/>
     <Route path="/" exact={true} component={HomeScreen}/>
-
+    <Route path="/shipping" component={ShippingScreen} />
+    <Route path="/payment" component={PaymentScreen} />
+    <Route path="/placeorder" component={PlaceOrderScreen} />
 
     </div>
   </main>
