@@ -1,12 +1,11 @@
 import express from 'express';
-import data from './data';
-import cors from 'cors';
 import dotenv from 'dotenv';
 import config from './config';
 import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
-import bodyParser from 'body-parser';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -17,13 +16,10 @@ mongoose.connect(mongodbUrl, {
   useCreateIndex: true
 }).catch(error => console.log(error.reason));
 
-const app=express();
+const app = express();
 app.use(cors());
-
 app.use(bodyParser.json());
-
 app.use("/api/users", userRoute);
-
 app.use("/api/products", productRoute);
 
 // app.use(cors());
@@ -40,4 +36,4 @@ app.use("/api/products", productRoute);
 //       res.status(404).send({ msg: "Product Not Found." })
 //   });
   
-app.listen(5000,()=>{console.log("Server started at http://localhost:5000")});
+app.listen(5000, () => { console.log("Server started at http://localhost:5000") });

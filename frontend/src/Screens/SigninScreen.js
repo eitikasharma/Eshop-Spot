@@ -17,7 +17,7 @@ function SigninScreen(props) {
 
   useEffect(() => {
     if (userInfo) {
-      props.history.push("redirect");
+      props.history.push(redirect);
     }
     return () => {
       //
@@ -59,8 +59,8 @@ function SigninScreen(props) {
           New to Eshop Spot?
         </li>
         <li>
-          <Link to={redirect === "/" ? "register"  : "register?redirect=" + redirect} 
-          className="button secondary text-center" >Create your Eshop Spot account</Link>
+        <Link to={redirect === "/" ? "register" : "register?redirect=" + redirect} 
+        className="button secondary text-center" >Create your Eshop Spot account</Link>
         </li>
       </ul>
     </form>

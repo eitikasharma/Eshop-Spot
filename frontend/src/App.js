@@ -62,7 +62,7 @@ const closeMenu=()=>{
     <div className="content">
 
     <Route path="/signin" component={SigninScreen}/>
-    <Route path="/products" component={ProductsScreen}/>
+    <Route path="/products" component={ProductsScreen} />
     <Route path="/register" component={RegisterScreen}/>
     <Route path="/product/:id" component={ProductScreen}/>
     <Route path="/cart/:id?" component={CartScreen}/>

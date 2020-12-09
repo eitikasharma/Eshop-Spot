@@ -17,7 +17,7 @@ function RegisterScreen(props) {
 
   useEffect(() => {
     if (userInfo) {
-      props.history.push("redirect");
+      props.history.push(redirect);
     }
     return () => {
       //
