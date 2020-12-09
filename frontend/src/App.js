@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import ProductsScreen from './screens/ProductsScreen';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import { useSelector } from 'react-redux';
@@ -58,6 +59,7 @@ const closeMenu=()=>{
     <div className="content">
 
     <Route path="/signin" component={SigninScreen}/>
+    <Route path="/products" component={ProductsScreen}/>
     <Route path="/register" component={RegisterScreen}/>
     <Route path="/product/:id" component={ProductScreen}/>
     <Route path="/cart/:id?" component={CartScreen}/>
