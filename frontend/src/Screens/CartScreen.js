@@ -34,9 +34,7 @@ return <div className="cart">
         <ul className="cart-list-container">
             <li>
                 <h3>Shopping Cart</h3>
-                <div>
-                    Price
-                </div>
+               
             </li>
             {
                 cartItems.length ===0?
@@ -66,9 +64,10 @@ return <div className="cart">
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                             </select>
+                            &nbsp;
                             <button type="button" className="button" onClick={() => removeFromCartHandler(item.product)}>Delete</button>
                         </div>
-                        <div className="cart-price"> {item.price}</div>
+                        <div className="cart-price"> Price: Rs.{item.price}</div>
                     </div>
                     
                     )

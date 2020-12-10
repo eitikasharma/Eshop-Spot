@@ -49,10 +49,10 @@ const closeMenu=()=>{
 <button onClick={closeMenu} className="slidebar-closebutton">x</button>
 <ul>
   <li>
-    <a href="index.html">Pants</a>
+    <a href="index.html">Mobiles</a>
   </li>
   <li>
-    <a href="index.html">Shirts</a>
+    <a href="index.html">Laptops</a>
   </li>
 </ul>
 
